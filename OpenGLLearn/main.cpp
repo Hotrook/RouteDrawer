@@ -36,8 +36,8 @@ struct SynchronizedRoute{
     std::mutex & routeMutex;
     
     SynchronizedRoute(vector<Point> & route, std::mutex & mutex ) :
-        route( route ),
-        routeMutex(mutex) {
+    route( route ),
+    routeMutex(mutex) {
         updated = true;
     }
 };
@@ -75,46 +75,34 @@ int main(int argc, const char * argv[]) {
     SynchronizedRoute * sr = new SynchronizedRoute( route, routeMutex );
     
     sf::RenderWindow * window = new sf::RenderWindow( sf::VideoMode(X_SIZE, Y_SIZE), "My Window");
-
-    std::thread t(taniec, window, sr) ;
-
     
-//    drawRoute(window, sr);
+    std::thread t(taniec, window, sr) ;
+    
+    
+    //    drawRoute(window, sr);
     std::this_thread::sleep_for (std::chrono::seconds(5));
     
-
+    
     t.join();
     std::this_thread::sleep_for (std::chrono::seconds(5));
-
+    
     
     return 0;
 }
 
 void taniec( sf::RenderWindow * window, SynchronizedRoute * sroute){
-    cout << 2 << " " << "DZIEŃ DOBRY DZIKIE BOBRY!" << endl;
-        while( window->isOpen() ){
-//            sf::Event event;
-//    
-//            while( window->pollEvent(event)){
-//                if( event.type == sf::Event::Closed )
-//                    window->close();
-//    
-//            }
-//    
-
-            sroute->routeMutex.lock();
-            if( sroute->updated ){
-                cout << "XD \n";
-                window->clear();
-                drawRoute( sroute->route, *window );
-                window->display();
-            }
-            sroute->routeMutex.unlock();
-    
-            std::this_thread::sleep_for (std::chrono::milliseconds(10));
+    while( window->isOpen() ){
+        
+        sroute->routeMutex.lock();
+        if( sroute->updated ){
+            window->clear();
+            drawRoute( sroute->route, *window );
+            window->display();
         }
-    cout << " trole\n ";
-
+        sroute->routeMutex.unlock();
+        
+        std::this_thread::sleep_for (std::chrono::milliseconds(10));
+    }
 }
 
 

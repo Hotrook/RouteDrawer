@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9614919F1F4332B50013319B /* libpthread.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9614919E1F4332B50013319B /* libpthread.tbd */; };
+		961491A21F437EF80013319B /* Drawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961491A01F437EF80013319B /* Drawer.cpp */; };
+		961491A51F437F590013319B /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961491A31F437F590013319B /* Point.cpp */; };
+		961491A81F437F9F0013319B /* SynchronizedRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961491A61F437F9F0013319B /* SynchronizedRoute.cpp */; };
 		962325701F3A3F8200513917 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9623256F1F3A3F8200513917 /* main.cpp */; };
 		9623257A1F3A445D00513917 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962325791F3A445D00513917 /* Cocoa.framework */; };
 		9623257C1F3A446600513917 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9623257B1F3A446600513917 /* OpenGL.framework */; };
@@ -34,6 +37,12 @@
 
 /* Begin PBXFileReference section */
 		9614919E1F4332B50013319B /* libpthread.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpthread.tbd; path = usr/lib/libpthread.tbd; sourceTree = SDKROOT; };
+		961491A01F437EF80013319B /* Drawer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Drawer.cpp; sourceTree = "<group>"; };
+		961491A11F437EF80013319B /* Drawer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Drawer.hpp; sourceTree = "<group>"; };
+		961491A31F437F590013319B /* Point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Point.cpp; sourceTree = "<group>"; };
+		961491A41F437F590013319B /* Point.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Point.hpp; sourceTree = "<group>"; };
+		961491A61F437F9F0013319B /* SynchronizedRoute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SynchronizedRoute.cpp; sourceTree = "<group>"; };
+		961491A71F437F9F0013319B /* SynchronizedRoute.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SynchronizedRoute.hpp; sourceTree = "<group>"; };
 		9623256C1F3A3F8200513917 /* OpenGLLearn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLLearn; sourceTree = BUILT_PRODUCTS_DIR; };
 		9623256F1F3A3F8200513917 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		962325771F3A444D00513917 /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = ../../../../../../usr/local/lib/libglfw.dylib; sourceTree = "<group>"; };
@@ -90,6 +99,12 @@
 			isa = PBXGroup;
 			children = (
 				9623256F1F3A3F8200513917 /* main.cpp */,
+				961491A01F437EF80013319B /* Drawer.cpp */,
+				961491A11F437EF80013319B /* Drawer.hpp */,
+				961491A31F437F590013319B /* Point.cpp */,
+				961491A41F437F590013319B /* Point.hpp */,
+				961491A61F437F9F0013319B /* SynchronizedRoute.cpp */,
+				961491A71F437F9F0013319B /* SynchronizedRoute.hpp */,
 			);
 			path = OpenGLLearn;
 			sourceTree = "<group>";
@@ -169,6 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961491A51F437F590013319B /* Point.cpp in Sources */,
+				961491A81F437F9F0013319B /* SynchronizedRoute.cpp in Sources */,
+				961491A21F437EF80013319B /* Drawer.cpp in Sources */,
 				962325701F3A3F8200513917 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

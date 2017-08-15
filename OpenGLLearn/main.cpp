@@ -2,7 +2,7 @@
 //  main.cpp
 //  OpenGLLearn
 //
-//  Created by Sebastian Mróz on 08.08.2017.
+//  Created by Hotrook on 08.08.2017.
 //  Copyright © 2017 Sebastian Mróz. All rights reserved.
 //
 
@@ -62,8 +62,6 @@ void permute( vector<Point> & route );
 void drawRoute(sf::RenderWindow * window, SynchronizedRoute * sroute);
 
 
-void taniec( sf::RenderWindow * window, SynchronizedRoute * sroute );
-
 int main(int argc, const char * argv[]) {
     
     srand (time(NULL));
@@ -76,35 +74,10 @@ int main(int argc, const char * argv[]) {
     
     sf::RenderWindow * window = new sf::RenderWindow( sf::VideoMode(X_SIZE, Y_SIZE), "My Window");
     
-    std::thread t(taniec, window, sr) ;
-    
-    
-    //    drawRoute(window, sr);
-    std::this_thread::sleep_for (std::chrono::seconds(5));
-    
-    
-    t.join();
-    std::this_thread::sleep_for (std::chrono::seconds(5));
-    
+    drawRoute(window, sr);
     
     return 0;
 }
-
-void taniec( sf::RenderWindow * window, SynchronizedRoute * sroute){
-    while( window->isOpen() ){
-        
-        sroute->routeMutex.lock();
-        if( sroute->updated ){
-            window->clear();
-            drawRoute( sroute->route, *window );
-            window->display();
-        }
-        sroute->routeMutex.unlock();
-        
-        std::this_thread::sleep_for (std::chrono::milliseconds(10));
-    }
-}
-
 
 sf::Color generateRandomColor(){
     return sf::Color(rand()%255, rand()%255,rand()%255);

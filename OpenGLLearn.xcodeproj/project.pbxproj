@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9614919F1F4332B50013319B /* libpthread.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9614919E1F4332B50013319B /* libpthread.tbd */; };
 		962325701F3A3F8200513917 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9623256F1F3A3F8200513917 /* main.cpp */; };
+		9623257A1F3A445D00513917 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962325791F3A445D00513917 /* Cocoa.framework */; };
+		9623257C1F3A446600513917 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9623257B1F3A446600513917 /* OpenGL.framework */; };
+		9623257E1F3A447000513917 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9623257D1F3A447000513917 /* IOKit.framework */; };
+		962325801F3A447B00513917 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9623257F1F3A447B00513917 /* CoreVideo.framework */; };
+		962325831F3A6BB600513917 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 962325811F3A67F800513917 /* libglfw.3.2.dylib */; };
+		9662C9501F3E2B4D00510F4C /* libsfml-system.2.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C94E1F3E2B4D00510F4C /* libsfml-system.2.4.2.dylib */; };
+		9662C9511F3E2B4D00510F4C /* libsfml-window.2.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C94F1F3E2B4D00510F4C /* libsfml-window.2.4.2.dylib */; };
+		9662C9541F3E2B8100510F4C /* libsfml-graphics.2.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C9521F3E2B8100510F4C /* libsfml-graphics.2.4.2.dylib */; };
+		9662C9551F3E2B8100510F4C /* libsfml-network.2.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C9531F3E2B8100510F4C /* libsfml-network.2.4.2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +33,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9614919E1F4332B50013319B /* libpthread.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpthread.tbd; path = usr/lib/libpthread.tbd; sourceTree = SDKROOT; };
 		9623256C1F3A3F8200513917 /* OpenGLLearn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLLearn; sourceTree = BUILT_PRODUCTS_DIR; };
 		9623256F1F3A3F8200513917 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		962325771F3A444D00513917 /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = ../../../../../../usr/local/lib/libglfw.dylib; sourceTree = "<group>"; };
+		962325791F3A445D00513917 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9623257B1F3A446600513917 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		9623257D1F3A447000513917 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		9623257F1F3A447B00513917 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		962325811F3A67F800513917 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		9662C94E1F3E2B4D00510F4C /* libsfml-system.2.4.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.4.2.dylib"; path = "../../../../../../usr/local/Cellar/sfml/2.4.2_1/lib/libsfml-system.2.4.2.dylib"; sourceTree = "<group>"; };
+		9662C94F1F3E2B4D00510F4C /* libsfml-window.2.4.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.4.2.dylib"; path = "../../../../../../usr/local/Cellar/sfml/2.4.2_1/lib/libsfml-window.2.4.2.dylib"; sourceTree = "<group>"; };
+		9662C9521F3E2B8100510F4C /* libsfml-graphics.2.4.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.4.2.dylib"; path = "../../../../../../usr/local/Cellar/sfml/2.4.2_1/lib/libsfml-graphics.2.4.2.dylib"; sourceTree = "<group>"; };
+		9662C9531F3E2B8100510F4C /* libsfml-network.2.4.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.4.2.dylib"; path = "../../../../../../usr/local/Cellar/sfml/2.4.2_1/lib/libsfml-network.2.4.2.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +53,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9614919F1F4332B50013319B /* libpthread.tbd in Frameworks */,
+				9662C9541F3E2B8100510F4C /* libsfml-graphics.2.4.2.dylib in Frameworks */,
+				9662C9551F3E2B8100510F4C /* libsfml-network.2.4.2.dylib in Frameworks */,
+				9662C9501F3E2B4D00510F4C /* libsfml-system.2.4.2.dylib in Frameworks */,
+				9662C9511F3E2B4D00510F4C /* libsfml-window.2.4.2.dylib in Frameworks */,
+				962325831F3A6BB600513917 /* libglfw.3.2.dylib in Frameworks */,
+				962325801F3A447B00513917 /* CoreVideo.framework in Frameworks */,
+				9623257E1F3A447000513917 /* IOKit.framework in Frameworks */,
+				9623257C1F3A446600513917 /* OpenGL.framework in Frameworks */,
+				9623257A1F3A445D00513917 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +74,7 @@
 			children = (
 				9623256E1F3A3F8200513917 /* OpenGLLearn */,
 				9623256D1F3A3F8200513917 /* Products */,
+				962325761F3A444D00513917 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +92,24 @@
 				9623256F1F3A3F8200513917 /* main.cpp */,
 			);
 			path = OpenGLLearn;
+			sourceTree = "<group>";
+		};
+		962325761F3A444D00513917 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9614919E1F4332B50013319B /* libpthread.tbd */,
+				9662C9521F3E2B8100510F4C /* libsfml-graphics.2.4.2.dylib */,
+				9662C9531F3E2B8100510F4C /* libsfml-network.2.4.2.dylib */,
+				9662C94E1F3E2B4D00510F4C /* libsfml-system.2.4.2.dylib */,
+				9662C94F1F3E2B4D00510F4C /* libsfml-window.2.4.2.dylib */,
+				962325811F3A67F800513917 /* libglfw.3.2.dylib */,
+				9623257F1F3A447B00513917 /* CoreVideo.framework */,
+				9623257D1F3A447000513917 /* IOKit.framework */,
+				9623257B1F3A446600513917 /* OpenGL.framework */,
+				962325791F3A445D00513917 /* Cocoa.framework */,
+				962325771F3A444D00513917 /* libglfw.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +268,12 @@
 		962325741F3A3F8200513917 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/sfml/2.4.2_1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -225,6 +281,12 @@
 		962325751F3A3F8200513917 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/sfml/2.4.2_1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -248,6 +310,7 @@
 				962325751F3A3F8200513917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

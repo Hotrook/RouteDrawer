@@ -16,15 +16,16 @@
 
 struct SynchronizedRoute{
     bool updated;
-    std::vector<Point> & route;
+    std::vector<Point> & points;
+    std::vector< int > & route;
     std::mutex & routeMutex;
     
-    SynchronizedRoute(std::vector<Point> & route, std::mutex & mutex ) :
+    SynchronizedRoute(std::vector<Point> & points, std::vector< int > & route, std::mutex & mutex ) :
     route( route ),
-    routeMutex(mutex) {
+    routeMutex(mutex),
+    points(points) {
         updated = true;
     }
 };
-
 
 #endif /* SynchronizedRoute_hpp */

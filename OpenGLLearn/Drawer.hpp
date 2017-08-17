@@ -27,19 +27,21 @@ void createCircle(Point & point, sf::CircleShape & circle);
 
 void drawLine( Point & first, Point & second, sf::RenderWindow & window );
 
-void generateRoute( std::vector<Point>& route, int size );
+void generatePoints( std::vector<Point>& points, int size );
 
-void drawPaths(std::vector<Point> & route, sf::RenderWindow & window);
+void generateRoute( std::vector< int > & route, int size );
 
-void drawCircles(std::vector<Point> & route, sf::RenderWindow & window);
+void drawPaths(std::vector<Point> & points, std::vector< int > * route, sf::RenderWindow & window);
 
-void drawRoute( std::vector<Point> & route, sf::RenderWindow & window );
+void drawCircles(std::vector<Point> & points, sf::RenderWindow & window);
+
+void drawRoute( std::vector<Point> & points, std::vector< int > & route, sf::RenderWindow & window );
 
 void permute( std::vector<Point> & route );
 
 void drawRoute(sf::RenderWindow * window, SynchronizedRoute * sroute);
 
-
+int uniform( int scope );
 
 #endif /* Drawer_hpp */
 

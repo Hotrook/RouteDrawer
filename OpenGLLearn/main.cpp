@@ -16,11 +16,15 @@ int main(int argc, const char * argv[]) {
     
     srand (time(NULL));
     
-    std::vector<Point> route;
+    std::vector<Point> points;
+    std::vector<int> route;
+    
+    generatePoints(points, SIZE);
     generateRoute(route, SIZE);
+    
     std::mutex routeMutex;
     
-    SynchronizedRoute * sr = new SynchronizedRoute( route, routeMutex );
+    SynchronizedRoute * sr = new SynchronizedRoute( points, route, routeMutex );
     
     sf::RenderWindow * window = new sf::RenderWindow( sf::VideoMode(X_SIZE, Y_SIZE), "My Window");
     

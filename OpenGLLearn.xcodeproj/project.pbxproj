@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960300D31F4607F700C52BA8 /* Mapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 960300D11F4607F700C52BA8 /* Mapper.cpp */; };
 		9614919F1F4332B50013319B /* libpthread.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9614919E1F4332B50013319B /* libpthread.tbd */; };
 		961491A21F437EF80013319B /* Drawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961491A01F437EF80013319B /* Drawer.cpp */; };
 		961491A51F437F590013319B /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961491A31F437F590013319B /* Point.cpp */; };
 		961491A81F437F9F0013319B /* SynchronizedRoute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 961491A61F437F9F0013319B /* SynchronizedRoute.cpp */; };
 		962325701F3A3F8200513917 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9623256F1F3A3F8200513917 /* main.cpp */; };
-		9623257A1F3A445D00513917 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962325791F3A445D00513917 /* Cocoa.framework */; };
 		9623257C1F3A446600513917 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9623257B1F3A446600513917 /* OpenGL.framework */; };
-		9623257E1F3A447000513917 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9623257D1F3A447000513917 /* IOKit.framework */; };
-		962325801F3A447B00513917 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9623257F1F3A447B00513917 /* CoreVideo.framework */; };
-		962325831F3A6BB600513917 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 962325811F3A67F800513917 /* libglfw.3.2.dylib */; };
 		9662C9501F3E2B4D00510F4C /* libsfml-system.2.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C94E1F3E2B4D00510F4C /* libsfml-system.2.4.2.dylib */; };
 		9662C9511F3E2B4D00510F4C /* libsfml-window.2.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C94F1F3E2B4D00510F4C /* libsfml-window.2.4.2.dylib */; };
 		9662C9541F3E2B8100510F4C /* libsfml-graphics.2.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9662C9521F3E2B8100510F4C /* libsfml-graphics.2.4.2.dylib */; };
@@ -36,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		960300D11F4607F700C52BA8 /* Mapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mapper.cpp; sourceTree = "<group>"; };
+		960300D21F4607F700C52BA8 /* Mapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mapper.hpp; sourceTree = "<group>"; };
 		9614919E1F4332B50013319B /* libpthread.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpthread.tbd; path = usr/lib/libpthread.tbd; sourceTree = SDKROOT; };
 		961491A01F437EF80013319B /* Drawer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Drawer.cpp; sourceTree = "<group>"; };
 		961491A11F437EF80013319B /* Drawer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Drawer.hpp; sourceTree = "<group>"; };
@@ -67,11 +66,7 @@
 				9662C9551F3E2B8100510F4C /* libsfml-network.2.4.2.dylib in Frameworks */,
 				9662C9501F3E2B4D00510F4C /* libsfml-system.2.4.2.dylib in Frameworks */,
 				9662C9511F3E2B4D00510F4C /* libsfml-window.2.4.2.dylib in Frameworks */,
-				962325831F3A6BB600513917 /* libglfw.3.2.dylib in Frameworks */,
-				962325801F3A447B00513917 /* CoreVideo.framework in Frameworks */,
-				9623257E1F3A447000513917 /* IOKit.framework in Frameworks */,
 				9623257C1F3A446600513917 /* OpenGL.framework in Frameworks */,
-				9623257A1F3A445D00513917 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +100,8 @@
 				961491A41F437F590013319B /* Point.hpp */,
 				961491A61F437F9F0013319B /* SynchronizedRoute.cpp */,
 				961491A71F437F9F0013319B /* SynchronizedRoute.hpp */,
+				960300D11F4607F700C52BA8 /* Mapper.cpp */,
+				960300D21F4607F700C52BA8 /* Mapper.hpp */,
 			);
 			path = OpenGLLearn;
 			sourceTree = "<group>";
@@ -188,6 +185,7 @@
 				961491A81F437F9F0013319B /* SynchronizedRoute.cpp in Sources */,
 				961491A21F437EF80013319B /* Drawer.cpp in Sources */,
 				962325701F3A3F8200513917 /* main.cpp in Sources */,
+				960300D31F4607F700C52BA8 /* Mapper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
